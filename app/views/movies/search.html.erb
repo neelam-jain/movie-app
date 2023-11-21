@@ -1,0 +1,4 @@
+<!-- Display search results -->
+<% @results['Search'].each do |result| %>
+  <h3><%= link_to result['Title'], movie_path(result['imdbID']) %></h3>
+<% end %>
